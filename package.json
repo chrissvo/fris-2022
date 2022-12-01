@@ -1,14 +1,19 @@
 {
   "name": "fris2022",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "npm run build && surge ./dist -d https://fris.christian.surf"
   },
   "dependencies": {
+    "@vueform/toggle": "^2.0.1",
+    "axios": "^0.24.0",
     "core-js": "^3.6.5",
+    "global": "^4.4.0",
+    "surge": "^0.23.1",
     "vue": "^3.0.0"
   },
   "devDependencies": {
